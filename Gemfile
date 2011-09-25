@@ -7,6 +7,7 @@ source 'http://rubygems.org'
 
 gem 'sqlite3'
 gem 'sass'
+gem 'refinerycms-news'
 
 # Use unicorn as the web server
 # gem 'unicorn'
