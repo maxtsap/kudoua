@@ -11,7 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925140447) do
+ActiveRecord::Schema.define(:version => 20111010172143) do
+
+  create_table "galleries", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "galleries", ["id"], :name => "index_galleries_on_id"
+
+  create_table "gallery_entries", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.integer  "gallery_id"
+    t.integer  "entry_type", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "gallery_entries", ["id"], :name => "index_gallery_entries_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -105,6 +128,17 @@ ActiveRecord::Schema.define(:version => 20110925140447) do
   add_index "pages", ["lft"], :name => "index_pages_on_lft"
   add_index "pages", ["parent_id"], :name => "index_pages_on_parent_id"
   add_index "pages", ["rgt"], :name => "index_pages_on_rgt"
+
+  create_table "posts_images", :force => true do |t|
+    t.integer  "post_id"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.string   "chunk"
+    t.string   "caption"
+    t.string   "photographer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"

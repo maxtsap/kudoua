@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/Vizzuality/refinerycms-galleries.git
+  revision: ba04f6c6eb841173a4b0a5b1c5f3d695846f4c5a
+  specs:
+    refinerycms-galleries (0.4)
+
+GIT
+  remote: git://github.com/ginga/refinerycms-image-gallery.git
+  revision: 3906539f90b6726c88f882690d150baf335142fe
+  specs:
+    refinerycms-image-gallery (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -156,7 +168,9 @@ PLATFORMS
 
 DEPENDENCIES
   refinerycms (~> 1.0.8)
+  refinerycms-galleries (= 0.4)!
   refinerycms-i18n (~> 1.0.0)
+  refinerycms-image-gallery!
   refinerycms-news
   sass
   sqlite3
