@@ -52,7 +52,7 @@ Refinery.rescue_not_found = true
 # instead of the default file system for resources and images
 ENV['S3_KEY']='AKIAJ5SIRZUFLTXLKYXQ'
 ENV['S3_SECRET']='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'
-ENV['S3_BUCKET']='kudo'
+ENV['S3_BUCKET']='kudoimg'
 
 
-Refinery.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
+Refinery.s3_backend = true
