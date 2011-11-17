@@ -1,4 +1,26 @@
+<%= content_for :head do %>
+   <%= javascript_include_tag 'galleria-1.2.5.min' %>
+<% end %>
+
+<script>
+    Galleria.loadTheme('javascript/galleria/themes/classic/galleria.classic.min.js');
+</script>
 <%= render :partial => "/shared/content_page" %>
+
+
+<% Image.all.each do |i| %>
+  <img src="system/images/<%= i.image_uid.to_s %>" alt="My description" title="My title">
+  <%= i.image_uid.to_s %>
+<% end %>
+<div id="gallery">
+</div>
+
+<script>
+  $('#gallery').galleria({
+    width:500,
+    height:500
+  });
+</script>
 
 
 
