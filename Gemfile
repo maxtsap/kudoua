@@ -6,6 +6,7 @@ source 'http://rubygems.org'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem "jquery-rails"
 gem 'sass'
 gem 'refinerycms-news'
 gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'

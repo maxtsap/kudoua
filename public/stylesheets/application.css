@@ -4,10 +4,15 @@ body {
   font-size: 13px;
   line-height: 18px; }
 
+a {
+  text-decoration: none; }
+
+.clear {
+  clear: both; }
+
 #body_content, #side_body_content {
   float: left;
   width: 45%;
-  background: white;
   color: #333;
   padding: 20px; }
 
@@ -28,7 +33,10 @@ nav#menu {
   background-clip: padding-box;
   height: 40px;
   font-size: 14px;
-  line-height: 28px; }
+  line-height: 28px;
+  margin-top: 260px;
+  position: absolute;
+  width: 1000px; }
 
 #menu ul {
   list-style: none;
@@ -50,11 +58,12 @@ nav#menu {
   text-shadow: 1px 1px #333333; }
 
 section#page {
-  width: 1000px;
-  margin: 0 auto; }
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px; }
 
 header {
-  height: 320px;
+  height: 300px;
   background: url(/images/header-bg.png) no-repeat; }
 
 footer {
@@ -62,3 +71,7 @@ footer {
   height: 263px;
   background: url(/images/footer-bg.png) repeat-x;
   color: #ffffff; }
+  footer div#footer {
+    width: 1000px;
+    margin: 0px auto;
+    line-height: 40px; }
