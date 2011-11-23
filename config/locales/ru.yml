@@ -1,0 +1,24 @@
+ru:
+  shared:
+    admin:
+      form_actions:
+        close: "Закрыть"
+
+  admin:
+    images:
+      insert:
+        existing_image: "Существующее изображение"
+        new_image: "Новое изображение"
+      records:
+        no_images_yet: "Еще нет изображений"
+
+  pages:
+    home:
+      read_more: "Читать далее"
+      no_items_yet: "Записей не найдено."
+
+  news_items:
+    show:
+      published: "Опубликовано"
+      back_to_index: "На главную"
+
