@@ -22,3 +22,7 @@ ru:
       published: "Опубликовано"
       back_to_index: "На главную"
 
+  plugins:
+    galleries:
+      title: "Галлерея"
+
