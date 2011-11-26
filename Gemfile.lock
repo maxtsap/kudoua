@@ -192,7 +192,7 @@ PLATFORMS
 DEPENDENCIES
   fog
   jquery-rails
-  refinerycms (~> 1.0.8)
+  refinerycms (~> 1.0.9)
   refinerycms-galleries (= 0.4)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-image-gallery!
