@@ -17,7 +17,7 @@ Galleria.addTheme({
     author: 'Maxim Tsaplin',
     css: 'galleria.kudo.css',
     defaults: {
-//        transition: 'slide',
+        transition: 'slide',
         thumbCrop:  'height',
 
         // set this to false if you want to show the caption all the time:
