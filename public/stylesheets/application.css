@@ -67,11 +67,11 @@ header {
   background: url(/images/header-bg.png) no-repeat; }
 
 footer {
-  width: 100%;
+  width: 100% !important;
   height: 263px;
   background: url(/images/footer-bg.png) repeat-x;
   color: #ffffff; }
-  footer div#footer {
+  footer #footer {
     width: 1000px;
     margin: 0px auto;
     line-height: 40px; }

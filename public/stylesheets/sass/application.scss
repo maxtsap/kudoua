@@ -78,12 +78,12 @@ header{
 }
 
 footer{
-  div#footer{
+  width: 100% !important;
+  #footer{
     width:1000px;
     margin: 0px auto;
     line-height: 40px;
   }
-  width: 100%;
   height: 263px;
   background: url(/images/footer-bg.png) repeat-x;
   color: #ffffff;
