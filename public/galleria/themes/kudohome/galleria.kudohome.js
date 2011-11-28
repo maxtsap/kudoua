@@ -13,9 +13,9 @@ Galleria.requires(1.25, 'This version of Classic theme requires Galleria 1.2.5 o
 (function($) {
 
 Galleria.addTheme({
-    name: 'kudo',
+    name: 'kudohome',
     author: 'Maxim Tsaplin',
-    css: 'kudo.css',
+    css: 'kudohome.css',
     defaults: {
         transition: 'slide',
         thumbCrop:  'height',

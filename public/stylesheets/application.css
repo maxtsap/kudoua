@@ -1,20 +1,29 @@
 @import url('refinery/application.css');
 body {
-  font-family: Verdana;
+  font-family: Tahoma;
   font-size: 13px;
   line-height: 18px; }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
   font-weight: bold; }
 
 .clear {
   clear: both; }
 
-#body_content, #side_body_content {
+article {
+  margin-bottom: 20px; }
+  article.news_item_truncated {
+    border-bottom: 1px dashed black;
+    padding: 5px; }
+
+span.new_news {
+  color: #bc0202; }
+
+#body_content {
   float: left;
-  width: 45%;
+  width: 95%;
   color: #333;
   padding: 20px; }
 

@@ -21,7 +21,7 @@
   }
   /*width: 100%-40px;*/
 
-  article.news_item_truncated {
+  article{
     @include rounded(5px);
     @include gradient(#111111, #666666);
     border: 1px solid #66666;

@@ -29,7 +29,7 @@
   /*width: 100%-40px;*/ }
   #home_news h3 a {
     color: white; }
-  #home_news article.news_item_truncated {
+  #home_news article {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -55,7 +55,7 @@
     background-color: #33333;
     padding: 5px 20px;
     /*width: 100%-40px;*/ }
-    #home_news article.news_item_truncated span.dot {
+    #home_news article span.dot {
       width: 15px;
       height: 15px;
       -moz-border-radius: 5px;
