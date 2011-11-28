@@ -4,7 +4,7 @@
 <%= javascript_include_tag 'galleria-min' %>
 
 <script>
-  Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+  Galleria.loadTheme('galleria/themes/kudo/galleria.kudo.js');
 </script>
 
 <div id="home_gallery">
@@ -40,6 +40,7 @@
         <%= truncate item.body, :length => 200,
                      :omission => " ... #{link_to t('.read_more'), news_item_url(item)}",
                      :preserve_html_tags => true %>
+        <div class="clear"></div>
       </article>
     <% end %>
 

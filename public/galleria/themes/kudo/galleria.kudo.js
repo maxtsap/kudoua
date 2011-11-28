@@ -13,11 +13,11 @@ Galleria.requires(1.25, 'This version of Classic theme requires Galleria 1.2.5 o
 (function($) {
 
 Galleria.addTheme({
-    name: 'classic',
-    author: 'Galleria',
-    css: 'galleria.classic.css',
+    name: 'kudo',
+    author: 'Maxim Tsaplin',
+    css: 'galleria.kudo.css',
     defaults: {
-        transition: 'slide',
+//        transition: 'slide',
         thumbCrop:  'height',
 
         // set this to false if you want to show the caption all the time:

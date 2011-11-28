@@ -13,6 +13,7 @@ ru:
         no_images_yet: "Еще нет изображений"
 
   pages:
+    about: "О нас"
     home:
       read_more: "Читать далее"
       no_items_yet: "Записей не найдено."
@@ -23,6 +24,7 @@ ru:
       back_to_index: "На главную"
 
   plugins:
+    galleries: Галлерея
     galleries:
       title: "Галлерея"
 
