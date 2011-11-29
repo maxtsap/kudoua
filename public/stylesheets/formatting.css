@@ -3,7 +3,8 @@
   Formatting applies to backend WYSIWYG editors and all frontend.
 */
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 .read_more {
   font-size: 0.8em; }

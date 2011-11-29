@@ -1,8 +1,7 @@
 @import url('refinery/application.css');
 body {
   font-family: Tahoma;
-  font-size: 13px;
-  line-height: 18px; }
+  font-size: 13px; }
 
 a {
   text-decoration: underline;

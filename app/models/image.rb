@@ -6,8 +6,6 @@ class Image < ActiveRecord::Base
   MAX_SIZE_IN_MB = 5
 
   image_accessor :image
-	has_many :posts_images
-	has_many :posts, :through => :posts_images
 
   validates :image, :presence  => {},
                     :length    => { :maximum => MAX_SIZE_IN_MB.megabytes }
@@ -28,9 +26,11 @@ class Image < ActiveRecord::Base
   PAGES_PER_ADMIN_INDEX = 20
 
   # allows Mass-Assignment
-  attr_accessible :id, :image, :image_size
+  attr_accessible :id, :image, :image_size, :use_on_main
 
   delegate :size, :mime_type, :url, :width, :height, :to => :image
+
+  scope :used_on_main, where(:use_on_main => true)
 
   class << self
     # How many images per page should be displayed?

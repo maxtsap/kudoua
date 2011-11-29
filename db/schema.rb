@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111129193032) do
+ActiveRecord::Schema.define(:version => 20111129200522) do
 
   create_table "galleries", :force => true do |t|
     t.string   "name"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20111129193032) do
     t.datetime "updated_at"
     t.string   "image_uid"
     t.string   "image_ext"
+    t.boolean  "use_on_main"
   end
 
   create_table "news_item_translations", :force => true do |t|

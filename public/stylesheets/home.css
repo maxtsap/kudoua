@@ -1,76 +1,125 @@
-#home_gallery {
-  margin: 20px 0 20px 0;
-  float: left; }
+/*
+Syntax error: Invalid CSS after "w  float:": expected pseudoclass or pseudoelement, was " left;"
+        on line 53 of /home/mt/projects/kudo/public/stylesheets/sass/home.scss
 
-.side_body {
-  width: 300px;
-  height: 500px;
-  float: right; }
+48: }
+49: #body_content{
+50: }
+51: 
+52: #gallery{
+53: w  float: left;
+54: }
 
-#home_news {
-  background-color: #777777;
-  -moz-border-radius: 5px 5px 0 0;
-  -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 20px;
-  color: white;
-  background-color: #666666;
-  background-image: -webkit-gradient(linear, left top, left bottom, black, to(#666666));
-  /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, black, #666666);
-  /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(top, black, #666666);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(top, black, #666666);
-  /* IE10 */
-  background-image: -o-linear-gradient(top, black, #666666);
-  /* Opera 11.10+ */
-  background-image: linear-gradient(top, black, #666666);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=black, EndColorStr=#666666)";
-  position: relative;
-  /*z-index: -1;*/
-  /*width: 100%-40px;*/ }
-  #home_news h3 a {
-    color: white; }
-  #home_news article {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background-color: #666666;
-    background-image: -webkit-gradient(linear, left top, left bottom, #111111, to(#666666));
-    /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #111111, #666666);
-    /* Chrome 10+, Saf5.1+ */
-    background-image: -moz-linear-gradient(top, #111111, #666666);
-    /* FF3.6 */
-    background-image: -ms-linear-gradient(top, #111111, #666666);
-    /* IE10 */
-    background-image: -o-linear-gradient(top, #111111, #666666);
-    /* Opera 11.10+ */
-    background-image: linear-gradient(top, #111111, #666666);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#111111, EndColorStr=#666666)";
-    position: relative;
-    /*z-index: -1;*/
-    border: 1px solid #66666;
-    background-color: #33333;
-    padding: 5px 20px;
-    /*width: 100%-40px;*/ }
-    #home_news article span.dot {
-      width: 15px;
-      height: 15px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box;
-      background-color: #b80202; }
-
-#gallery {
-  float: left; }
+Backtrace:
+/home/mt/projects/kudo/public/stylesheets/sass/home.scss:53
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:926:in `expected'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:872:in `expected'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:854:in `expr!'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:620:in `pseudo'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:506:in `simple_selector_sequence'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:488:in `_selector'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:461:in `selector'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:445:in `selector_sequence'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:370:in `ruleset'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:433:in `block in declaration_or_ruleset'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:910:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:910:in `rethrow'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:434:in `declaration_or_ruleset'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:396:in `block_child'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:385:in `block_contents'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:377:in `block'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:371:in `ruleset'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:395:in `block_child'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:388:in `block_contents'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:59:in `stylesheet'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/scss/parser.rb:28:in `parse'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/engine.rb:327:in `_to_tree'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/engine.rb:300:in `_render'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/engine.rb:248:in `block in render'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/util.rb:297:in `silence_sass_warnings'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/engine.rb:248:in `render'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/compiler.rb:175:in `each'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/compiler.rb:173:in `each'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin.rb:81:in `update_stylesheets'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin.rb:54:in `check_for_updates'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/sass-3.1.10/lib/sass/plugin/rack.rb:51:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/warden-1.0.6/lib/warden/manager.rb:35:in `block in call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/warden-1.0.6/lib/warden/manager.rb:34:in `catch'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/warden-1.0.6/lib/warden/manager.rb:34:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/dragonfly-0.9.8/lib/dragonfly/middleware.rb:13:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:132:in `forward'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:241:in `fetch'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:181:in `lookup'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:65:in `call!'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:50:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/dragonfly-0.9.8/lib/dragonfly/middleware.rb:13:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:132:in `forward'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:241:in `fetch'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:181:in `lookup'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:65:in `call!'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-cache-1.1/lib/rack/cache/context.rb:50:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/dragonfly-0.9.8/lib/dragonfly/cookie_monster.rb:9:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/home/mt/.rvm/gems/ruby-1.9.2-p290@kudo/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"w  float:\": expected pseudoclass or pseudoelement, was \" left;\"\A         on line 53 of /home/mt/projects/kudo/public/stylesheets/sass/home.scss\A \A 48: }\A 49: #body_content{\A 50: }\A 51: \A 52: #gallery{\A 53: w  float: left;\A 54: }"; }

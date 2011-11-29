@@ -10,7 +10,7 @@
 <div id="home_gallery">
 
   <div id="gallery">
-    <% Image.all.each do |i| %>
+    <% Image.used_on_main.all.each do |i| %>
       <%= image_fu i %>
     <% end %>
   </div>
