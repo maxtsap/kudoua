@@ -1,5 +1,11 @@
 #home_gallery {
-  margin: 20px 0 20px 0; }
+  margin: 20px 0 20px 0;
+  float: left; }
+
+.side_body {
+  width: 300px;
+  height: 500px;
+  float: right; }
 
 #home_news {
   background-color: #777777;
@@ -65,11 +71,6 @@
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
       background-color: #b80202; }
-
-#body_content {
-  float: left;
-  color: #333;
-  margin: 20px; }
 
 #gallery {
   float: left; }

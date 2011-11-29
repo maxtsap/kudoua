@@ -22,10 +22,9 @@ span.new_news {
   color: #bc0202; }
 
 #body_content {
-  float: left;
-  width: 95%;
+  width: 96%;
   color: #333;
-  padding: 20px; }
+  padding: 2%; }
 
 #page_container {
   background: url(/images/body-bg.png) repeat-x #cccccc; }
