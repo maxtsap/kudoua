@@ -11,6 +11,7 @@
         <%= truncate  item.body, :length => 500,
                       :omission => " ... #{link_to t('.read_more'), news_item_url(item), :class => :read_more}",
                       :preserve_html_tags => true %>
+        <div class="clear"></div>
       </article>
     <% end %>
 
