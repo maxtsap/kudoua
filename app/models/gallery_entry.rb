@@ -3,13 +3,12 @@ class GalleryEntry < ActiveRecord::Base
   acts_as_indexed :fields => [:name, :body]
 
   validates_presence_of :image
-  validates_uniqueness_of :name, :scope => [:gallery_id]
   validates_inclusion_of :entry_type, :in => 0..1
 
   belongs_to :gallery
   belongs_to :image
 
-  before_save :set_name
+  after_save :set_name
 
   def self.types
     {
