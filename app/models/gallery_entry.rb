@@ -2,12 +2,14 @@ class GalleryEntry < ActiveRecord::Base
 
   acts_as_indexed :fields => [:name, :body]
 
-  validates_presence_of :name, :image
+  validates_presence_of :image
   validates_uniqueness_of :name, :scope => [:gallery_id]
   validates_inclusion_of :entry_type, :in => 0..1
 
   belongs_to :gallery
   belongs_to :image
+
+  before_save :set_name
 
   def self.types
     {
@@ -26,6 +28,12 @@ class GalleryEntry < ActiveRecord::Base
 
   self.types.each do |type_name, value|
     eval("scope :#{type_name}, where(:entry_type => #{value})")
+  end
+
+  def set_name
+    if self.name.blank?
+      self.name = "image_#{self.id}"
+    end
   end
 
 end
