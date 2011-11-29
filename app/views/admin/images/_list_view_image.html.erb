@@ -3,6 +3,7 @@
     <%= list_view_image.title %> <span class="preview">&nbsp;</span>
   </span>
   <span class='actions'>
+    <%= "Гл" if list_view_image.use_on_main %>
     <%= link_to refinery_icon_tag('eye.png'), list_view_image.url,
                 :target => "_blank",
                 :title => "#{image_fu list_view_image, '96x96#c', :size => '96x96'}" %>
