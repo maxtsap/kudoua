@@ -17,7 +17,7 @@
     <%= raw @gallery.body %>
 
   </p>
-  <div id="gallery">
+  <div id="gallery" class="gallery_page">
     <% @gallery.gallery_entries.image.each do |gallery_entry| %>
       <%= image_fu gallery_entry.image %>
     <% end -%>
@@ -27,8 +27,8 @@
 
   <script>
     $('#gallery').galleria({
-      width:900,
-      height:700
+      width:600,
+      height:600
     });
   </script>
 
