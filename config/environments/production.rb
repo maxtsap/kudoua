@@ -50,9 +50,9 @@ end
 Refinery.rescue_not_found = true
 # When true will use Amazon's Simple Storage Service on your production machine
 # instead of the default file system for resources and images
-ENV['S3_KEY']='AKIAJ5SIRZUFLTXLKYXQ'
-ENV['S3_SECRET']='6ECa8DdUGiKTGUbqCC1XFbFD35ye+cLPkAQB1Mwc'
-ENV['S3_BUCKET']='kudoimg'
+# ENV['S3_KEY']='AKIAJ5SIRZUFLTXLKYXQ'
+# ENV['S3_SECRET']='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'
+# ENV['S3_BUCKET']='kudoimg'
 
 
 Refinery.s3_backend = true

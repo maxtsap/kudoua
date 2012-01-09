@@ -11,7 +11,7 @@ gem 'sass'
 gem 'refinerycms-news'
 gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'
 gem 'refinerycms-image-gallery', :git => 'git://github.com/ginga/refinerycms-image-gallery.git'
-gem 'fog'
+# gem 'fog'
 gem 'refinerycms-page-images'
 
 # Use unicorn as the web server
