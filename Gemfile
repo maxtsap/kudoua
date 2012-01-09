@@ -15,7 +15,7 @@ gem 'fog'
 gem 'refinerycms-page-images'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
