@@ -44,6 +44,7 @@ gem 'refinerycms',              '~> 1.0.9'
 
 group :development do
   gem 'thin'
+  gem 'capistrano'
 end
 
 group :development, :test do
@@ -69,3 +70,5 @@ end
 gem 'refinerycms-i18n',         '~> 1.0.0'
 
 # END USER DEFINED
+
+gem 'refinerycms-folders', '1.0', :path => 'vendor/engines'
