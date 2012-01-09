@@ -14,7 +14,7 @@ test: &test
 
 production: &production
   adapter: mysql2
-  host: mysql0.locum.ru
+  host: www.mysql0.locum.ru
   database: kudoua_kudo-ua18
   username: kudoua_kudo-ua18
   password: TsqP0caS
