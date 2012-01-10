@@ -1,20 +1,20 @@
 login: &login
-  adapter: mysql2
+  adapter: mysql
   host: localhost
   username: root
   password:
 
 development: &development
-  database: your_local_database
+  database: kudoua_development
   <<: *login
 
 test: &test
-  database: your_test_database
+  database: kudoua_test
   <<: *login
 
 production: &production
-  adapter: mysql2
-  host: www.mysql0.locum.ru
+  adapter: mysql
+  host: mysql0.locum.ru
   database: kudoua_kudo-ua18
   username: kudoua_kudo-ua18
   password: TsqP0caS
