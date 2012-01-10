@@ -13,7 +13,7 @@ set :deploy_to, "/home/hosting_kudoua/projects/kudo-ua"
 
 role :web, "lithium.locum.ru"   # Your HTTP server, Apache/etc
 role :app, "lithium.locum.ru"   # This may be the same as your `Web` server
-role :db,  "mysql0.locum.ru", :primary => true # This is where Rails migrations will run
+role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations will run
 
 # эта секция для того, чтобы вы не хранили доступ к базе в системе контроля версий. Поместите dayabase.yml в shared,
 # чтобы он копировался в нужный путь при каждом выкладывании новой версии кода
