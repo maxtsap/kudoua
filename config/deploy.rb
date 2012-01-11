@@ -1,4 +1,5 @@
 # У вас должна быть настроена авторизация ssh по сертификатам
+require 'rvm/capistrano'
 require 'bundler/capistrano'
 
 set :application, "kudo-ua"
