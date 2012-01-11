@@ -1,9 +1,6 @@
 # У вас должна быть настроена авторизация ssh по сертификатам
-# Add RVM's lib directory to the load path.
 
-# require 'bundler/capistrano'
-
-set :application, "kudo-ua"
+set :application, "kudo"
 
 # настройка системы контроля версий и репозитария, по умолчанию - git, если используется иная система версий, нужно изменить значение scm
 set :scm, :git
@@ -11,15 +8,12 @@ set :repository,  "git@github.com:maxtsap/kudoua.git"
 
 set :user, "hosting_kudoua"
 set :use_sudo, false
-set :deploy_to, "/home/hosting_kudoua/projects/kudo-ua"
+set :deploy_to, "/home/hosting_kudoua/projects/kudo"
 
 
 role :web, "lithium.locum.ru"   # Your HTTP server, Apache/etc
 role :app, "lithium.locum.ru"   # This may be the same as your `Web` server
 role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations will run
-
-# set :bundle_without, [:development, :test]
-# set :bundle_flags, "--deployment"
 
 # эта секция для того, чтобы вы не хранили доступ к базе в системе контроля версий. Поместите dayabase.yml в shared,
 # чтобы он копировался в нужный путь при каждом выкладывании новой версии кода
@@ -35,8 +29,8 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 #  run "cp #{db_config} #{release_path}/config/database.yml"
 #end
 
-set :unicorn_conf, "/etc/unicorn/kudo-ua.kudoua.rb"
-set :unicorn_pid, "/var/run/unicorn/kudo-ua.kudoua.pid"
+set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
+set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
 
 
 
@@ -61,3 +55,4 @@ namespace :deploy do
     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 end
+
