@@ -16,7 +16,7 @@ role :web, "lithium.locum.ru"   # Your HTTP server, Apache/etc
 role :app, "lithium.locum.ru"   # This may be the same as your `Web` server
 role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations will run
 
-set :bundle_without, [:development, :test
+set :bundle_without, [:development, :test]
 set :bundle_flags, "--deployment"]
 
 # эта секция для того, чтобы вы не хранили доступ к базе в системе контроля версий. Поместите dayabase.yml в shared,
