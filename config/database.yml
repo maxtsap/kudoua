@@ -14,6 +14,7 @@ test: &test
 
 production: &production
   adapter: mysql
+  encoding:   utf8
   host: mysql0.locum.ru
   database: kudoua_kudo66
   username: kudoua_kudo66
