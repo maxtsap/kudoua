@@ -15,7 +15,7 @@ gem 'refinerycms-image-gallery', :git => 'git://github.com/ginga/refinerycms-ima
 gem 'refinerycms-page-images'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
