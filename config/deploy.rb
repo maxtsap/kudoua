@@ -30,6 +30,7 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 #  run "cp #{db_config} #{release_path}/config/database.yml"
 #end
 set :bundle_cmd, "rvm use 1.9.3 do bundle"
+set :bundle_dir, "~/.gem"
 set :bundle_without, [:development, :test]
 set :bundle_flags, "--deployment"
 
