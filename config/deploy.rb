@@ -29,7 +29,7 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 #  db_config = "#{shared_path}/database.yml"
 #  run "cp #{db_config} #{release_path}/config/database.yml"
 #end
-set :bundle_cmd, "rvm use 1.9.3 do bundle"
+set :bundle_cmd, "rvm use 1.8.7 do bundle"
 set :bundle_dir, "~/.gem"
 set :bundle_without, [:development, :test]
 set :bundle_flags, "--deployment"
@@ -39,7 +39,7 @@ set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
 
 
 
-  set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.9.3 do bundle exec unicorn_rails -Dc #{unicorn_conf})"
+  set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.8.7 do bundle exec unicorn_rails -Dc #{unicorn_conf})"
 
 
 
