@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20111129200522) do
 
-  create_table "folders", :force => true do |t|
-    t.string   "name"
-    t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "folders", ["id"], :name => "index_folders_on_id"
-
   create_table "galleries", :force => true do |t|
     t.string   "name"
     t.text     "body"

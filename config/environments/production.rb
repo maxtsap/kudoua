@@ -55,4 +55,4 @@ Refinery.rescue_not_found = true
 # ENV['S3_BUCKET']='kudoimg'
 
 
-Refinery.s3_backend = true
+Refinery.s3_backend = false
