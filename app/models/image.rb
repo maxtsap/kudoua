@@ -50,7 +50,8 @@ class Image < ActiveRecord::Base
       RefinerySetting.find_or_set(:user_image_sizes, {
         :small => '110x110>',
         :medium => '225x255>',
-        :large => '450x450>'
+        :large => '450x450>',
+        :full => '900x900>'
       }, :destroyable => false)
     end
   end
