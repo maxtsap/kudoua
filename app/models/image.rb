@@ -51,7 +51,7 @@ class Image < ActiveRecord::Base
         :small => '110x110>',
         :medium => '225x255>',
         :large => '450x450>',
-        :full => '900x900>'
+        :full => '1000x1000>'
       }, :destroyable => false)
     end
   end
