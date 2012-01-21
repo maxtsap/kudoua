@@ -17,5 +17,6 @@ production: &production
   encoding:   utf8
   host: mysql0.locum.ru
   database: kudoua_kudo66
+  pool: 5
   username: kudoua_kudo66
   password: xeddSLqv
