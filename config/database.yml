@@ -15,6 +15,7 @@ test: &test
 production: &production
   adapter: mysql
   encoding:   utf8
+  reconnect:  true
   host: mysql0.locum.ru
   database: kudoua_kudo66
   pool: 5
