@@ -19,7 +19,7 @@
   </p>
   <div id="gallery" class="gallery_page">
     <% @gallery.gallery_entries.image.each do |gallery_entry| %>
-      <%= image_fu gallery_entry.image(:small) %>
+      <%= image_fu gallery_entry.image %>
     <% end -%>
   </div>
   <div class="clear"></div>
