@@ -607,7 +607,7 @@ var undef,
                     until : function() { return false; },
                     success : function() {},
                     error : function() { Galleria.raise('Could not complete wait function.'); },
-                    timeout: 3000
+                    timeout: 20000
                 }, options);
 
                 var start = Utils.timestamp(),
