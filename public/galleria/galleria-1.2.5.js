@@ -20,7 +20,7 @@ var undef,
 // internal constants
     VERSION = 1.25,
     DEBUG = true,
-    TIMEOUT = 30000,
+    TIMEOUT = 90000,
     DUMMY = false,
     NAV = navigator.userAgent.toLowerCase(),
     HASH = window.location.hash.replace(/#\//, ''),
