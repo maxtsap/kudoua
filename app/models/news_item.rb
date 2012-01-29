@@ -40,7 +40,7 @@ class NewsItem < ActiveRecord::Base
 
   # for will_paginate
   def self.per_page
-    20
+    7
   end
 
   def title_with_new
