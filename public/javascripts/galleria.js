@@ -20,7 +20,7 @@ var undef,
 // internal constants
     VERSION = 1.25,
     DEBUG = true,
-    TIMEOUT = 90000,
+    TIMEOUT = 200000,
     DUMMY = false,
     NAV = navigator.userAgent.toLowerCase(),
     HASH = window.location.hash.replace(/#\//, ''),
@@ -607,7 +607,7 @@ var undef,
                     until : function() { return false; },
                     success : function() {},
                     error : function() { Galleria.raise('Could not complete wait function.'); },
-                    timeout: 20000
+                    timeout: 200000
                 }, options);
 
                 var start = Utils.timestamp(),
