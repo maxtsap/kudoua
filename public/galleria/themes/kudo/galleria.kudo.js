@@ -19,7 +19,7 @@ Galleria.addTheme({
     defaults: {
         transition: 'slide',
         thumbCrop:  'height',
-        carousel: false,
+        carousel: true,
         // set this to false if you want to show the caption all the time:
         _toggleInfo: true
     },
