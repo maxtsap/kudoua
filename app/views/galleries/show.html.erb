@@ -5,7 +5,9 @@
 
 
 <script>
-  Galleria.loadTheme('/galleria/themes/kudo/galleria.kudo.js');
+  $(window).load(function(){
+    Galleria.loadTheme('/galleria/themes/kudo/galleria.kudo.js');
+  })
 </script>
 
 <% content_for :body_content_title do %>
