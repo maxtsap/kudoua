@@ -17,6 +17,9 @@
   <%= yield :stylesheets %>
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
+  <%= jquery_include_tags(:jquery_ui => false) %>
+  <%= javascript_include_tag('application') %>
+
   <%= yield :head_libraries %>
   <%= yield :head %>
 
