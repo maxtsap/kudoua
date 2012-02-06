@@ -1,41 +1,47 @@
 @import 'rounded';
 @import 'gradient';
 
-#home_gallery{
+#home_gallery {
   margin: 20px 0 20px 0;
   float: left;
 }
 
-.side_body{
+.side_body {
   width: 340px;
   height: 500px;
   float: right;
 }
 
-#home_news{
+ul#middle_content {
+
+}
+
+#home_news {
   background-color: #777777;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   padding: 20px;
   color: white;
   @include gradient(#000000, #666666);
-  h3{
-    a{
+  h3 {
+    a {
       color: white;
     }
   }
-  /*width: 100%-40px;*/
+/*width: 100%-40px;*/
 
-  article{
+  article {
     @include rounded(5px);
     @include gradient(#111111, #666666);
     border: 1px solid #66666;
     background-color: #33333;
     padding: 5px 20px;
-    /*width: 100%-40px;*/
-    span.dot{
+  /*width: 100%-40px;*/
+    span.dot {
       width: 15px;
       height: 15px;
       @include rounded(5px);
@@ -43,12 +49,11 @@
     }
   }
 
-
-
-}
-#body_content{
 }
 
-#gallery{
+#body_content {
+}
+
+#gallery {
   float: left;
 }
