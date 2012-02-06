@@ -38,7 +38,7 @@
 
 
 <ul id="middle_content">
-  <li id="news" class="<%= 'full_size' if Banner.all.empty? %>">
+  <li id="news" class="<%= 'full_size' if @banners.blank? %>">
     <div id="home_news">
 
       <% if @news_items.any? %>
@@ -62,10 +62,10 @@
       <% end %>
     </div>
   </li>
-  <% if Banner.all.any? %>
+  <% unless @banners.blank? %>
     <li id="banners">
       <ul id="banner_items">
-        <% Banner.all.each do |banner| %>
+        <% @banners.each do |banner| %>
           <li>
             <%= link_to((image_fu banner.image, '190x190'), banner.link) %>
           </li>

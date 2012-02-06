@@ -7,8 +7,8 @@ class PagesController < ApplicationController
 
   # This action is usually accessed with the root path, normally '/'
   def home
-    p '*'*90
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
+    @banners = defined? Bunner ? Banner.all : nil
   end
 
   # This action can be accessed normally, or as nested pages.
