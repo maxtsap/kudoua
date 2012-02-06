@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120125181843) do
+ActiveRecord::Schema.define(:version => 20120206210411) do
+
+  create_table "banners", :force => true do |t|
+    t.integer  "image_id"
+    t.string   "link"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "banners", ["id"], :name => "index_banners_on_id"
 
   create_table "galleries", :force => true do |t|
     t.string   "name"

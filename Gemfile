@@ -71,4 +71,4 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 
 # END USER DEFINED
 
-gem 'refinerycms-folders', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-banners', '1.0', :path => 'vendor/engines'

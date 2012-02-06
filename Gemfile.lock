@@ -13,7 +13,7 @@ GIT
 PATH
   remote: vendor/engines
   specs:
-    refinerycms-folders (1.0)
+    refinerycms-banners (1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -209,7 +209,7 @@ DEPENDENCIES
   jquery-rails
   mysql
   refinerycms (~> 1.0.9)
-  refinerycms-folders (= 1.0)!
+  refinerycms-banners (= 1.0)!
   refinerycms-galleries (= 0.4)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-image-gallery!

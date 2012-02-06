@@ -1,0 +1,25 @@
+ru:
+  shared:
+    admin:
+      image_picker:
+        image: изображение
+  plugins:
+    banners:
+      title: Баннер
+  admin:
+    banners:
+      actions:
+        create_new: Добавить новый баннер
+        reorder: Отсортировать баннеры
+        reorder_done: Сортировка закончена
+      records:
+        title: Баннеры
+        sorry_no_results: Ничего не найдено.
+        no_items_yet: Еще нет ни одного баннера.
+      banner:
+        view_live_html: Просмотреть баннер на главной
+        edit: Редактировать баннер
+        delete: Удалить баннер
+  banners:
+    show:
+      other: Другие баннеры

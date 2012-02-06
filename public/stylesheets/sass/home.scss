@@ -21,14 +21,19 @@ ul#middle_content {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 20px;
+  padding: 2%;
   color: white;
 
   li {
     list-style: none;
     display: inline-block;
+    vertical-align: top;
+
     &#news {
-      width: 80%;
+      width: 77%;
+      &.full_size {
+        width: 100%;
+      }
 
       #home_news {
 
@@ -57,7 +62,17 @@ ul#middle_content {
     }
 
     &#banners {
-      width: 20%;
+      width: 22%;
+
+      ul {
+        margin:0 9% 0 9% ;
+        padding: 0;
+        li {
+          overflow-x: hidden;
+          margin-bottom: 2em;
+        }
+      }
+
     }
   }
 }
