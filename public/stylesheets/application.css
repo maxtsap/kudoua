@@ -44,7 +44,8 @@ nav#menu {
   line-height: 28px;
   margin-top: 260px;
   position: absolute;
-  width: 1000px; }
+  width: 1000px;
+  z-index: 100; }
   nav#menu ul {
     list-style: none;
     padding: 0px;

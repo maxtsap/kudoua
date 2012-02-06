@@ -1,16 +1,15 @@
 $(document).ready(function () {
   $("nav#menu ul li").hover(
-      function () {
+    function () {
+      if ($(this).attr('id') === undefined) {
         $("ul", this).css(
           {
-            left: $(this).width() + "px",
-            top: $(this).height() + "px"
+            left:($(this).position().left + $(this).width()) + "px",
+            top:$(this).height() + "px"
           }
         )
-        $('>ul', this).slideDown(100);
-      },
-      function () {
-        $('ul', this).slideUp(100);
       }
+      $('>ul', this).toggle(100);
+    }
   )
 })
