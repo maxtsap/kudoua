@@ -33,7 +33,6 @@ div#header {
 
 nav#menu {
   background: url(/images/menu-bg.png) repeat-x;
-  /*border: 1px solid #666666;*/
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
@@ -46,32 +45,34 @@ nav#menu {
   margin-top: 260px;
   position: absolute;
   width: 1000px; }
-
-#menu ul {
-  list-style: none;
-  padding: 0px;
-  background-color: #999;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
-
-#menu ul li {
-  float: left;
-  margin-right: 10px; }
-
-#menu ul li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: #333333;
-  text-shadow: 1px 1px #dddddd; }
-
-#menu ul li a:hover {
-  color: #ffffff;
-  text-shadow: 1px 1px #333333; }
+  nav#menu ul {
+    list-style: none;
+    padding: 0px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #999; }
+    nav#menu ul .dropdown {
+      border: 1px #ccc solid; }
+      nav#menu ul .dropdown li {
+        float: none; }
+    nav#menu ul li {
+      float: left;
+      margin-right: 10px; }
+      nav#menu ul li ul {
+        position: absolute; }
+      nav#menu ul li a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #333333;
+        text-shadow: 1px 1px #dddddd; }
+      nav#menu ul li.selected > a, nav#menu ul li a:hover {
+        color: #ffffff;
+        text-shadow: 1px 1px #333333; }
 
 section#page {
   width: 960px;

@@ -12,20 +12,19 @@ a {
   font-weight: bold;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
-article{
+article {
   margin-bottom: 20px;
-  &.news_item_truncated{
+  &.news_item_truncated {
     border-bottom: 1px dashed black;
     padding: 5px;
   }
 }
 
-
-span.new_news{
+span.new_news {
   color: #bc0202;
 }
 
@@ -35,67 +34,80 @@ span.new_news{
   padding: 2%;
 }
 
-#page_container{
+#page_container {
   background: url(/images/body-bg.png) repeat-x #CCCCCC;
 }
 
-div#header{
+div#header {
   height: 260px;
 
 }
 
-nav#menu{
-    background: url(/images/menu-bg.png) repeat-x;
-    /*border: 1px solid #666666;*/
-    @include rounded(6px);
-    height: 40px;
-    font-size: 14px;
-    line-height: 28px;
-    margin-top: 260px;
-    position: absolute;
-    width:1000px;
-}
-
-#menu ul {
-  list-style: none;
-  padding: 0px;
-  background-color: #999;
+nav#menu {
+  background: url(/images/menu-bg.png) repeat-x;
   @include rounded(6px);
+  height: 40px;
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 260px;
+  position: absolute;
+  width: 1000px;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    @include rounded(6px);
+    background-color: #999;
+
+    .dropdown {
+      border: 1px #ccc solid;
+
+      li {
+        float: none;
+      }
+
+    }
+
+    li {
+
+      float: left;
+      margin-right: 10px;
+      ul {
+        position: absolute;
+      }
+
+      a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #333333;
+        text-shadow: 1px 1px #dddddd;
+      }
+
+      &.selected>a, a:hover {
+        color: #ffffff;
+        text-shadow: 1px 1px #333333;
+      }
+
+    }
+  }
 }
 
-#menu ul li {
-  float: left;
-  margin-right: 10px;
-}
-
-#menu ul li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: #333333;
-  text-shadow: 1px 1px #dddddd;
-}
-
-#menu ul li a:hover {
-  color:#ffffff;
-  text-shadow: 1px 1px #333333;
-}
-
-section#page{
+section#page {
   width: 960px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
 }
 
-header{
+header {
   height: 300px;
   background: url(/images/header-bg.gif) no-repeat;
 }
 
-footer{
+footer {
   width: 100% !important;
-  #footer{
-    width:1000px;
+  #footer {
+    width: 1000px;
     margin: 0px auto;
     line-height: 40px;
   }
@@ -104,6 +116,6 @@ footer{
   color: #ffffff;
 }
 
-.gallery_page{
+.gallery_page {
   margin: 0 180px 0 180px;
 }
