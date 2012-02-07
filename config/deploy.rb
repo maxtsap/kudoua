@@ -42,9 +42,9 @@ set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
   set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.8.7 do bundle exec unicorn_rails -Dc #{unicorn_conf})"
 
 after 'deploy:update_code' do
-  bundle_cmd     = fetch(:bundle_cmd, "bundle")
-  bundle_flags   = fetch(:bundle_flags, "--deployment --quiet")
-  bundle_dir     = fetch(:bundle_dir, File.join(fetch(:shared_path), 'bundle'))
+  bundle_cmd     = fetch(:bundle_cmd, "rvm use 1.8.7 do bundle")
+  bundle_flags   = fetch(:bundle_flags, "--deployment")
+  bundle_dir     = fetch(:bundle_dir, File.join(fetch(:shared_path), '~/.gem'))
   bundle_gemfile = fetch(:bundle_gemfile, "Gemfile")
   bundle_without = [*fetch(:bundle_without, [:development, :test])].compact
 
