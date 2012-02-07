@@ -209,7 +209,7 @@ DEPENDENCIES
   jquery-rails
   mysql
   refinerycms (~> 1.0.9)
-  refinerycms-banners (= 1.0)!
+  refinerycms-banners!
   refinerycms-galleries (= 0.4)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-image-gallery!

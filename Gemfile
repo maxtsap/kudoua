@@ -73,5 +73,5 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # END USER DEFINED
 
 path 'vendor/engines' do
-  gem 'refinerycms-banners', '1.0'
+  gem 'refinerycms-banners', :require => 'banners'
 end
