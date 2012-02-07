@@ -19,6 +19,11 @@
     <%= f.text_field :link  -%>
   </div>
   
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title  -%>
+  </div>
+  
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
                 :f => f,

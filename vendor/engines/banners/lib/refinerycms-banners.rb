@@ -1,4 +1,4 @@
-require 'refinery'
+require 'refinerycms-base'
 
 module Refinery
   module Banners
@@ -17,13 +17,11 @@ module Refinery
 
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
-          plugin.url = {:controller => '/admin/banners', :action => 'index'}
-          plugin.menu_match = /^\/?(admin|refinery)\/(banner\_entries|banners)/
           plugin.name = "banners"
           plugin.pathname = root
           plugin.activity = {
             :class => Banner,
-            :title => 'title'
+            :title => 'link'
           }
         end
       end

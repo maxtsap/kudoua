@@ -4,6 +4,7 @@ class CreateBanners < ActiveRecord::Migration
     create_table :banners do |t|
       t.integer :image_id
       t.string :link
+      t.string :title
       t.integer :position
 
       t.timestamps
