@@ -1,4 +1,4 @@
-require 'refinerycms-base'
+require 'refinery'
 
 module Refinery
   module Banners
