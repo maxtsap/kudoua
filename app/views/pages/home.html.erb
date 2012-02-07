@@ -27,12 +27,12 @@
 
 <%#= render :partial => "/shared/content_page" %>
 <div class="side_body">
-  <%= raw @page[:side_body] %>
+  <%= raw @page.content_for(:side_body) %>
 </div>
 
 <div class="clear"></div>
 <div id="body_content">
-  <%= raw @page[:body] %>
+  <%= raw @page.content_for(:body) %>
 </div>
 
 
