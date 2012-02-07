@@ -17,6 +17,7 @@ module Refinery
 
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
+          plugin.url = {:controller => '/admin/banners', :action => 'index'}
           plugin.name = "banners"
           plugin.pathname = root
           plugin.activity = {
