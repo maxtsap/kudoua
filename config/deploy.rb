@@ -29,19 +29,8 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 #  db_config = "#{shared_path}/database.yml"
 #  run "cp #{db_config} #{release_path}/config/database.yml"
 #end
-set :bundle_cmd, "rvm use 1.8.7 do bundle"
-set :bundle_dir, "~/.gem"
-set :bundle_without, [:development, :test]
-set :bundle_flags, "--deployment"
 
-set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
-set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
-
-
-
-  set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.8.7 do bundle exec unicorn_rails -Dc #{unicorn_conf})"
-
-after 'deploy:update_code' do
+after "deploy:update_code" do
   bundle_cmd     = fetch(:bundle_cmd, "rvm use 1.8.7 do bundle")
   bundle_flags   = fetch(:bundle_flags, "--deployment")
   bundle_dir     = fetch(:bundle_dir, File.join(fetch(:shared_path), '~/.gem'))
@@ -59,6 +48,18 @@ after 'deploy:update_code' do
 
   run run_cmd, :shell => '/bin/bash'
 end
+
+set :bundle_cmd, "rvm use 1.8.7 do bundle"
+set :bundle_dir, "~/.gem"
+set :bundle_without, [:development, :test]
+set :bundle_flags, "--deployment"
+
+set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
+set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
+
+
+
+  set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.8.7 do bundle exec unicorn_rails -Dc #{unicorn_conf})"
 
 
 # - for unicorn - #
