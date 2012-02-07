@@ -68,7 +68,7 @@ end
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
+gem 'refinerycms-banners', '1.0.1'
 
 # END USER DEFINED
 
-gem 'refinerycms-banners', '1.0', :path => 'vendor/engines'

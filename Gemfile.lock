@@ -10,11 +10,6 @@ GIT
   specs:
     refinerycms-image-gallery (0.1.2)
 
-PATH
-  remote: vendor/engines
-  specs:
-    refinerycms-banners (1.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -136,6 +131,7 @@ GEM
       devise (~> 1.4.3)
       friendly_id_globalize3 (~> 3.2.1)
       refinerycms-core (= 1.0.9)
+    refinerycms-banners (1.0.1)
     refinerycms-base (1.0.9)
     refinerycms-core (1.0.9)
       acts_as_indexed (~> 0.7)
@@ -209,7 +205,7 @@ DEPENDENCIES
   jquery-rails
   mysql
   refinerycms (~> 1.0.9)
-  refinerycms-banners (= 1.0)!
+  refinerycms-banners (= 1.0.1)
   refinerycms-galleries (= 0.4)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-image-gallery!
