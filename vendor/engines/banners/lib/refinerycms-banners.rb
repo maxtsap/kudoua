@@ -21,7 +21,7 @@ module Refinery
           plugin.pathname = root
           plugin.activity = {
             :class => Banner,
-            :title => 'link'
+            :title => 'title'
           }
         end
       end
