@@ -30,25 +30,6 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 #  run "cp #{db_config} #{release_path}/config/database.yml"
 #end
 
-after "deploy:update_code" do
-  bundle_cmd     = fetch(:bundle_cmd, "rvm use 1.8.7 do bundle")
-  bundle_flags   = fetch(:bundle_flags, "--deployment")
-  bundle_dir     = fetch(:bundle_dir, File.join(fetch(:shared_path), '~/.gem'))
-  bundle_gemfile = fetch(:bundle_gemfile, "Gemfile")
-  bundle_without = [*fetch(:bundle_without, [:development, :test])].compact
-
-  args = ["--gemfile #{File.join(fetch(:current_release), bundle_gemfile)}"]
-  args << "--path #{bundle_dir}" unless bundle_dir.to_s.empty?
-  args << bundle_flags.to_s
-  args << "--without #{bundle_without.join(" ")}" unless bundle_without.empty?
-
-
-  run_cmd = "cd \"#{fetch(:current_release)}\"; "
-  run_cmd << "#{bundle_cmd} install #{args.join(' ')}"
-
-  run run_cmd, :shell => '/bin/bash'
-end
-
 set :bundle_cmd, "rvm use 1.8.7 do bundle"
 set :bundle_dir, "~/.gem"
 set :bundle_without, [:development, :test]
