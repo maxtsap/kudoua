@@ -6,6 +6,13 @@ ru:
   plugins:
     banners:
       title: Баннер
+  activerecord:
+    attributes:
+      banner:
+        link: Ссылка
+        title: Заголовок
+        image: Изображение
+
   admin:
     banners:
       actions:
@@ -20,6 +27,7 @@ ru:
         view_live_html: Просмотреть баннер на главной
         edit: Редактировать баннер
         delete: Удалить баннер
+
   banners:
     show:
       other: Другие баннеры

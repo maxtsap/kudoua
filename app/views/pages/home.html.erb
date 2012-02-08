@@ -67,7 +67,7 @@
       <ul id="banner_items">
         <% @banners.each do |banner| %>
           <li>
-            <%= link_to((image_fu banner.image, '190x190'), banner.link) %>
+            <%= link_to((image_fu banner.image, '190x190'), banner.link, :title => banner.title) %>
           </li>
         <% end %>
       </ul>
