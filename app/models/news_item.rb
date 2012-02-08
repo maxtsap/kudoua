@@ -6,6 +6,8 @@ class NewsItem < ActiveRecord::Base
   alias_attribute :content, :body
   validates :title, :content, :publish_date, :presence => true
 
+  belongs_to :preview_image, :class_name => 'Image'
+
   has_friendly_id :title, :use_slug => true
 
   acts_as_indexed :fields => [:title, :body]

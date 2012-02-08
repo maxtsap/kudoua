@@ -40,9 +40,9 @@ ul#middle_content {
       width: 77%; }
       ul#middle_content li#news.full_size {
         width: 100%; }
-      ul#middle_content li#news #home_news h3 a {
+      ul#middle_content li#news #news_list h3 a {
         color: white; }
-      ul#middle_content li#news #home_news article {
+      ul#middle_content li#news #news_list article {
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         border-radius: 5px;
@@ -67,7 +67,7 @@ ul#middle_content {
         border: 1px solid #66666;
         background-color: #33333;
         padding: 5px 20px; }
-        ul#middle_content li#news #home_news article span.dot {
+        ul#middle_content li#news #news_list article span.dot {
           width: 15px;
           height: 15px;
           -moz-border-radius: 5px;

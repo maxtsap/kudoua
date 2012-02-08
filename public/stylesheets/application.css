@@ -96,3 +96,19 @@ footer {
 
 .gallery_page {
   margin: 0 180px 0 180px; }
+
+div#news_list article ul {
+  padding: 0;
+  vertical-align: top;
+  overflow: hidden; }
+  div#news_list article ul li {
+    display: inline-block !important;
+    float: none;
+    vertical-align: top; }
+    div#news_list article ul li.first {
+      width: 20%;
+      text-align: center; }
+    div#news_list article ul li.second {
+      width: 78%; }
+      div#news_list article ul li.second p {
+        margin-top: 0; }

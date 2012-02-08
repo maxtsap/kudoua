@@ -1,0 +1,52 @@
+<%= form_for [:admin, @news_item] do |f| %>
+  <%= render :partial => "/shared/admin/error_messages",
+             :locals => {
+               :object => @news_item,
+               :include_object_name => true
+             } %>
+
+  <%= render :partial => "locale_picker",
+             :locals => {
+               :current_locale => Thread.current[:globalize_locale]
+             } if defined?(::Refinery::I18n) %>
+
+  <div class='field'>
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => "larger widest" %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :publish_date %>
+    <%= f.datetime_select :publish_date %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :expiration_date %>
+    <%= f.datetime_select :expiration_date, :start_year => Time.now.year,
+                                            :include_blank => true %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :preview_image -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+      :f => f,
+      :field => :preview_image_id,
+      :image => @news_item.preview_image,
+      :toggle_image_display => false
+    } %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :content %>
+    <%= f.text_area :content, :rows => "20", :class => "wymeditor widest" %>
+  </div>
+
+  <%= render :partial => "/shared/admin/form_actions",
+             :locals => {
+               :f => f,
+               :continue_editing => true,
+               :delete_title => t('admin.news_items.news_item.delete'),
+               :delete_confirmation => t('shared.admin.delete.message', :title => @news_item.title)
+             } %>
+
+<% end %>

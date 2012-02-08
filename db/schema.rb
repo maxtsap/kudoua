@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120207201129) do
+ActiveRecord::Schema.define(:version => 20120208183022) do
 
   create_table "banners", :force => true do |t|
     t.integer  "image_id"
@@ -89,6 +89,7 @@ ActiveRecord::Schema.define(:version => 20120207201129) do
     t.datetime "updated_at"
     t.integer  "image_id"
     t.datetime "expiration_date"
+    t.integer  "preview_image_id"
   end
 
   add_index "news_items", ["id"], :name => "index_news_items_on_id"
