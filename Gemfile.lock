@@ -14,6 +14,7 @@ PATH
   remote: vendor/engines
   specs:
     refinerycms-banners (1.0)
+    refinerycms-main_galleries (1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -216,6 +217,7 @@ DEPENDENCIES
   refinerycms-galleries (= 0.4)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-image-gallery!
+  refinerycms-main_galleries!
   refinerycms-news
   refinerycms-page-images
   sass

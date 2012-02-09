@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120208183022) do
+ActiveRecord::Schema.define(:version => 20120208215627) do
 
   create_table "banners", :force => true do |t|
     t.integer  "image_id"
@@ -68,6 +68,15 @@ ActiveRecord::Schema.define(:version => 20120208183022) do
     t.string   "image_ext"
     t.boolean  "use_on_main"
   end
+
+  create_table "main_galleries", :force => true do |t|
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "main_galleries", ["id"], :name => "index_main_galleries_on_id"
 
   create_table "news_item_translations", :force => true do |t|
     t.integer  "news_item_id"

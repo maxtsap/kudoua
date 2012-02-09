@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    main_galleries:
+      title: Main Galleries
+  admin:
+    main_galleries:
+      actions:
+        create_new: Maak een nieuwe Main Gallery
+        reorder: Wijzig de volgorde van de Main Galleries
+        reorder_done: Klaar met het wijzingen van de volgorde van de Main Galleries
+      records:
+        title: Main Galleries
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Main Galleries. Druk op 'Maak een nieuwe Main Gallery' om de eerste aan te maken.
+      main_gallery:
+        view_live_html: Bekijk deze main gallery op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze main gallery
+        delete: Verwijder deze main gallery voor eeuwig
+  main_galleries:
+    show:
+      other: Andere Main Galleries

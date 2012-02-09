@@ -75,4 +75,6 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 
 path 'vendor/engines' do
   gem 'refinerycms-banners'
+  gem 'refinerycms-main_galleries'
 end
+

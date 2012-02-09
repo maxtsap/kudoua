@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    main_galleries:
+      title: Main Galleries
+  admin:
+    main_galleries:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Main Gallery
+        reorder: Réordonner les Main Galleries
+        reorder_done: Fin de réordonnancement des Main Galleries
+      records:
+        title: Main Galleries
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Main Gallery. Cliquer sur "Créer un(e) nouve(au/l/lle) Main Gallery" pour créer votre premi(er/ère) main gallery.'
+      main_gallery:
+        view_live_html: Voir ce(t/tte) main gallery <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) main gallery
+        delete: Supprimer définitivement ce(t/tte) main gallery
+  main_galleries:
+    show:
+      other: Autres Main Galleries

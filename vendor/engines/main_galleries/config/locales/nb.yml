@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    main_galleries:
+      title: Main Galleries
+  admin:
+    main_galleries:
+      actions:
+        create_new: Lag en ny Main Gallery
+        reorder: Endre rekkefølgen på Main Galleries
+        reorder_done: Ferdig å endre rekkefølgen Main Galleries
+      records:
+        title: Main Galleries
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Main Galleries enda. Klikk på "Lag en ny Main Gallery" for å legge til din første main gallery.
+      main_gallery:
+        view_live_html: Vis hvordan denne main gallery ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne main gallery
+        delete: Fjern denne main gallery permanent
+  main_galleries:
+    show:
+      other: Andre Main Galleries

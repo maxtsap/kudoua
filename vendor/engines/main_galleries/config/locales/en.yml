@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    main_galleries:
+      title: Main Galleries
+  admin:
+    main_galleries:
+      actions:
+        create_new: Add New Main Gallery
+        reorder: Reorder Main Galleries
+        reorder_done: Done Reordering Main Galleries
+      records:
+        title: Main Galleries
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Main Galleries yet. Click "Add New Main Gallery" to add your first main gallery.
+      main_gallery:
+        view_live_html: View this main gallery live <br/><em>(opens in a new window)</em>
+        edit: Edit this main gallery
+        delete: Remove this main gallery forever
+  main_galleries:
+    show:
+      other: Other Main Galleries

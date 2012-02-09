@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    main_galleries:
+      title: Main Galleries
+  admin:
+    main_galleries:
+      actions:
+        create_new: CREATE NEW Main Gallery
+        reorder: REORDR Main Galleries
+        reorder_done: DUN REORDERIN Main Galleries
+      records:
+        title: Main Galleries
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Main Galleries YET. CLICK "CREATE NEW Main Gallery" 2 ADD UR FURST main gallery.
+      main_gallery:
+        view_live_html: VIEW DIS main gallery LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS main gallery
+        delete: REMOOV DIS main gallery FOREVR
+  main_galleries:
+    show:
+      other: OTHR Main Galleries
