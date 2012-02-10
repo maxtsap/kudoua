@@ -27,8 +27,6 @@
 
   <input type='hidden' name='wymeditor' value='<%= params[:wymeditor] %>'>
 
-  <%= f.label :use_on_main, "Использовать на главной странице" -%>
-  <%= f.check_box :use_on_main %>
   <%= render :partial => "/shared/admin/form_actions",
              :locals => {
                :f => f,

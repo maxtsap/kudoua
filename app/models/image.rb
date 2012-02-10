@@ -12,6 +12,8 @@ class Image < ActiveRecord::Base
   validates_property :mime_type, :of => :image, :in => %w(image/jpeg image/png image/gif image/tiff),
                      :message => :incorrect_format
 
+  belongs_to :folder
+
   # Docs for acts_as_indexed http://github.com/dougal/acts_as_indexed
   acts_as_indexed :fields => [:title]
 

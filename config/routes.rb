@@ -1,4 +1,14 @@
 Kudi::Application.routes.draw do
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :folders
+      resources :images, :except => :show do
+        collection do
+          get :insert
+        end
+      end
+    end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
