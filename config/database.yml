@@ -21,3 +21,13 @@ production: &production
   pool: 5
   username: kudoua_kudo66
   password: xeddSLqv
+
+staging: &staging
+  adapter: mysql
+  encoding:   utf8
+  reconnect:  true
+  host: mysql0.locum.ru
+  database: kudoua_skudo12
+  pool: 5
+  username: kudoua_skudo12
+  password: KixN2Xa2
