@@ -1,5 +1,9 @@
 # У вас должна быть настроена авторизация ssh по сертификатам
 require 'bundler/capistrano'
+require 'capistrano/ext/multistage'
+
+set :stages, %w(production staging)
+set :default_stage, "staging"
 
 set :application, "kudo"
 
@@ -9,8 +13,6 @@ set :repository,  "git@github.com:maxtsap/kudoua.git"
 
 set :user, "hosting_kudoua"
 set :use_sudo, false
-set :deploy_to, "/home/hosting_kudoua/projects/kudo"
-
 
 role :web, "lithium.locum.ru"   # Your HTTP server, Apache/etc
 role :app, "lithium.locum.ru"   # This may be the same as your `Web` server

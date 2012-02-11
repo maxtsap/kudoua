@@ -44,7 +44,8 @@ gem 'refinerycms',              '~> 1.0.9'
 
 group :development do
   gem 'thin'
-  gem 'capistrano'
+  gem 'capistrano', :require => false
+  gem 'capistrano-ext'
 end
 
 group :development, :test do
