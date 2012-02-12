@@ -1,9 +1,9 @@
 # У вас должна быть настроена авторизация ssh по сертификатам
+set :stages, %w(production, staging)
+set :default_stage, "staging"
+
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
-
-set :stages, %w(production staging)
-set :default_stage, "staging"
 
 set :application, "kudo"
 
@@ -37,13 +37,8 @@ set :bundle_dir, "~/.gem"
 set :bundle_without, [:development, :test]
 set :bundle_flags, "--deployment"
 
-if rails_env == 'production'
-  set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
-  set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
-else
-  set :unicorn_conf, "/etc/unicorn/skudo.kudoua.rb"
-  set :unicorn_pid, "/var/run/unicorn/skudo.kudoua.pid"
-end
+set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
+set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
 
 set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.8.7 do bundle exec unicorn_rails -Dc #{unicorn_conf})"
 
