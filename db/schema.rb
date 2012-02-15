@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120208215627) do
+ActiveRecord::Schema.define(:version => 20120215212728) do
 
   create_table "banners", :force => true do |t|
     t.integer  "image_id"
