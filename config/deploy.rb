@@ -35,7 +35,7 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 set :bundle_cmd, "rvm use 1.8.7 do bundle"
 #set :bundle_dir, "~/.gem"
 #set :bundle_without, [:development, :test]
-set :bundle_flags, "--deployment"
+#set :bundle_flags, "--deployment"
 
 set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
 set :unicorn_pid, "/var/run/unicorn/kudo.kudoua.pid"
