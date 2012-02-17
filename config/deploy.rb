@@ -5,7 +5,7 @@ set :default_stage, "staging"
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 
-set :application, "kudo"
+set :application, "skudo"
 
 # настройка системы контроля версий и репозитария, по умолчанию - git, если используется иная система версий, нужно изменить значение scm
 set :scm, :git
