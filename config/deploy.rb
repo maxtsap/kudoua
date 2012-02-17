@@ -5,7 +5,7 @@ set :default_stage, "staging"
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 
-set :application, "skudo"
+set :application, "kudo"
 
 # настройка системы контроля версий и репозитария, по умолчанию - git, если используется иная система версий, нужно изменить значение scm
 set :scm, :git
@@ -32,10 +32,9 @@ role :db,  "lithium.locum.ru", :primary => true # This is where Rails migrations
 #  run "cp #{db_config} #{release_path}/config/database.yml"
 #end
 
-set :bundle_frozen, "0"
-set :bundle_cmd, "rvm use 1.8.7 do bundle"
-set :bundle_dir, "~/.gem"
-set :bundle_without, [:development, :test]
+#set :bundle_cmd, "rvm use 1.8.7 do bundle"
+#set :bundle_dir, "~/.gem"
+#set :bundle_without, [:development, :test]
 set :bundle_flags, "--deployment"
 
 set :unicorn_conf, "/etc/unicorn/kudo.kudoua.rb"
@@ -58,7 +57,9 @@ namespace :deploy do
 
   desc "Restart Application"
   task :restart, :roles => :app do
-    run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
+    run "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
+    run unicorn_start_cmd
+    #run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 end
 
