@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   # This action is usually accessed with the root path, normally '/'
   def home
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
-    @banners =  Banner.all
+    @banners =  Banner.order('position ASC')
     #@banners = defined?(Banner).blank? ? [] : Banner.all
   end
 
